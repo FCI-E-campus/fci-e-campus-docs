@@ -1,0 +1,6 @@
+* Check: Admin
+* Check: Relationship course-professor participation
+* Check: RelationShip Post-Author and what likes it
+* TODO: Student Schedule Entity
+* TODO: moderator students, TA & professor as admin to course forum
+* TODO: better handle permissions
