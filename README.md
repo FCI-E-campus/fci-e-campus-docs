@@ -1,4 +1,4 @@
-FCI E-Campus
+<b>FCI E-Campus</b>
 
 Project Purpose & Overview:
 When it comes to organizing their class schedule, lectures/sections/labs materials and upcoming assignments/exams, students here at Faculty of Computer and Information, Cairo University are in a terrible mess. 
