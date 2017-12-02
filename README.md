@@ -10,7 +10,7 @@ Our app aims to help students stay organized by providing them with their schedu
 Also students receive notifications for new announcements, upcoming quizzes and assignments deliveries to help them keep track with their courses. Students will also be notified regularly to remind them of their assignments, quizzes and exams and urge them to do their studies and work before due date.  
 The app will organize downloading and uploading materials and will provide each course’s lectures, sections and labs with its materials that was uploaded.
 That’s not it the app will provide a forum for the students to communicate with each other. Students can help each other and what will be better is that now it will be appropriate for professors and TAs to enter the forum and answer some of these questions. The forum will be categorized and organized according to course, topic, etc...
-The app will contain many more features that will help FCI students in many aspects.
+The app will contain many more features that will help FCI students in many aspects.<br />
 <u>App’s Main Functionalities Summary:</u><br />
 1-	The app will allow each student, professor and TA to own an account and login with it.<br />
 2-	A (weekly and monthly) Schedule with courses lectures, labs and sections each student has according to his year, major, minor and registered courses. With a powerful UI that will summarize what they have in each day including lectures, labs, sections as well as assignments due dates, tasks, quizzes, exams, special events, etc... with the option to expand a certain day and view the whole details of these stuff.<br />
