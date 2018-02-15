@@ -1,0 +1,139 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="10.1.1000.89"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                    xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                    Id="4dc9aba0-051c-45fd-b92e-3a798ad0de6c">
+    <Page.Content>
+        <Content Width="412" Height="690" Id="d751f8aa-116e-4361-9b94-e3e43f534cd0">
+            <Content.Layers>
+                <Layer Id="98575756-cde6-4a65-be60-c4cb968dc2ea" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="2d8600c8-d6b3-479d-938b-ece035aa7ced" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="412,690" Id="894e1f12-310e-40c9-bfe4-6c8c2f9909d1" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="0623ba78-fbf0-4a7e-bf6e-93ce320bc82c" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="GenericPhone" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="02/15/2018 12:35:08" Id="5a68627d-9496-4729-b77c-465b1bbd6a4c">
+            <Scene.KeyFrames>
+                <KeyFrame Id="78980f15-a673-49ee-98aa-13f23bb92ed9">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Header Text="Course" FontSize="16" FontFamily="Open Sans" Id="b4d73b9d-e248-4b76-9190-46600c13881b" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Title RichText="Course Name:" FontFamily="Open Sans" Id="87bcd751-4c86-4bcb-99b1-e861814de5c7" Panel.Bounds="22,57,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Title RichText="Course Code:" FontFamily="Open Sans" Id="628168cf-dd24-4782-8061-560d2f912a30" Panel.Bounds="22,93,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="Compilers" FontFamily="Open Sans" Id="b520e4cf-4303-460d-8289-2d42607ba762" Panel.Bounds="159,59,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="CS419    " FontFamily="Open Sans" Id="6832878e-cf05-4e34-a496-d3363b6ce484" Panel.Bounds="159,95,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Title RichText="Taught by:" FontFamily="Open Sans" Id="9172c1b5-8f78-40bb-a4d1-5dec86000162" Panel.Bounds="22,276,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="DR. Mohammed Nassef" FontFamily="Open Sans" Id="9c181868-ad5e-4b7d-bef5-fb1f17133811" Panel.Bounds="159,278,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="TA. Mohammed Samir" FontFamily="Open Sans" Id="c41c5724-92e8-4dbb-9364-02196cf18a48" Panel.Bounds="159,307,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="TA. Nora Abdelhameed" FontFamily="Open Sans" Id="9b284c2b-601e-4dff-b006-06f8d96a9500" Panel.Bounds="159,337,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <Line Thickness="1" Background="#00FFFFFF" Id="04626166-05bb-43ac-ad61-8bbc99fa5f9d" Panel.Bounds="68,263,275{1,2147483647},3{1,2147483647}">
+                                    <Line.StartPoint>
+                                        <Point X="-111" Id="56211b60-a120-4d7c-86a1-7cc81708499f" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="fa85c068-5bec-44c0-861b-7d8046fbcac1">
+                                            <Segment.EndPoint>
+                                                <Point X="164" Id="b6bf5c67-899a-42c8-91c7-61e92f44f0cf" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <Line Thickness="1" Background="#00FFFFFF" Id="7ea8967f-af25-40bf-9885-896ea758f2c3" Panel.Bounds="68,372,275{1,2147483647},3{1,2147483647}">
+                                    <Line.StartPoint>
+                                        <Point X="-111" Id="038eabbc-d1d9-427c-8384-415e90b39dd3" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="f085e110-5ccf-4bde-8700-78242325e7cb">
+                                            <Segment.EndPoint>
+                                                <Point X="164" Id="fad6fbc7-5292-43ca-bdeb-c30b94f85581" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Label RichText="Syntactical specifications of languages. Lexical analysis. Parsing: top-down parsing, bottom-up parsing, LL-parsers, LR-parsers. Semantic analysis.&#xD;&#xA; Intermediate code generation. Error detection and error handling&#xD;&#xA;" FontFamily="Open Sans" Id="0d75e56a-23c9-4d87-9181-e7897e2e9ee4" Panel.Bounds="30,159,352{5,2147483647},103{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:Title RichText="Course Decription" FontFamily="Open Sans" Id="2fb84562-14ba-4ae7-8a4e-fb4dd0b5267c" Panel.Bounds="22,130,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="View Schedule" FontFamily="Open Sans" Id="c2d1b205-a7ec-4be2-a6e3-8bbce41efff4" Panel.Bounds="54,415,304{25,2147483647},44*{44,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="View Resources" FontFamily="Open Sans" Id="880a3e6d-7c1d-4696-bd25-815fd039b1a9" Panel.Bounds="54,477,304{25,2147483647},44*{44,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="View Tasks" FontFamily="Open Sans" Id="dd3078fc-d3f5-41bc-a69a-3260045de132" Panel.Bounds="53,539,304{25,2147483647},44*{44,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="98575756-cde6-4a65-be60-c4cb968dc2ea">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Open Forum" FontFamily="Open Sans" Id="5c9eac45-605e-4be4-8aff-c8c65a62700a" Panel.Bounds="54,601,304{25,2147483647},44*{44,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

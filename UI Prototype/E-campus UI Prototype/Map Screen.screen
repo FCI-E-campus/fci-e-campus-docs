@@ -1,0 +1,47 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="10.1.1000.89"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                    xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                    Id="09f563b2-c96a-4e3b-b116-ed888609455e">
+    <Page.Content>
+        <Content Width="412" Height="690" Id="fcce14ce-01f2-4602-b848-3e5f9989270d">
+            <Content.Layers>
+                <Layer Id="51409498-5a5c-4435-b2f0-a62b8f410daf" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="15d2acd6-d362-4bd0-a493-7bf56238a932" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="412,690" Id="ecbf1fbd-1d84-4174-aca6-7577f69a4202" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="79146a71-d220-4e0c-b588-cac26fb8d5e8" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="GenericPhone" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="02/15/2018 13:29:05" Id="35615783-2a3d-45ee-9e4d-b5eb861ddc55">
+            <Scene.KeyFrames>
+                <KeyFrame Id="20ed0a80-97d1-4e2c-bab0-d95abb039009">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
+                            <Add.Item>
+                                <i:Header Text="Faculty Map" FontSize="16" FontFamily="Open Sans" Id="70444a6e-ac60-4bbc-aff5-e98bea166e80" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
+                            <Add.Item>
+                                <Image SourcePath="assets/Faculty map(1).jpg" Id="0329e386-b7f9-4b16-86d9-7954ee23727f" Panel.Bounds="6,98,400{5,2147483647},582{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
+                            <Add.Item>
+                                <i:SearchBar WatermarkText="Search" FontFamily="Open Sans" Id="fd02296e-6e9d-44a5-83e5-1b20618d0412" Panel.Bounds="6,55,400{105,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

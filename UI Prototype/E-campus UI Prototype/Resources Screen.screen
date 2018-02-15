@@ -1,0 +1,180 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="10.1.1000.89"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                    xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                    Id="6003f47e-66c9-4305-b93b-50517d8dbed7">
+    <Page.Content>
+        <Content Width="412" Height="690" Id="d4ceef0c-74e8-4f5f-b686-576f932df1f5">
+            <Content.Layers>
+                <Layer Id="3635169d-9b7a-4b1c-a700-b750acf990e8" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="7d5f3b77-03eb-40c1-a833-b8433c1df301" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="412,690" Id="2c1e34a8-b0ff-4845-bff0-07d53792f105" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="f4743a86-5881-4b8e-8cfb-2677e69a73f7" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="GenericPhone" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="02/15/2018 13:07:12" Id="f3e0bc08-46a3-4e7d-af42-5367e83a081e">
+            <Scene.KeyFrames>
+                <KeyFrame Id="379e3512-dec9-4189-bf91-96de400a7cd4">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="3635169d-9b7a-4b1c-a700-b750acf990e8">
+                            <Add.Item>
+                                <i:Header Text="Resources" FontSize="16" FontFamily="Open Sans" Id="6cce9047-1613-45bc-88c4-8f8f017f217b" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3635169d-9b7a-4b1c-a700-b750acf990e8">
+                            <Add.Item>
+                                <i:TabBar Id="510e91c6-f5d9-410a-8baa-2ae83fca6a1e" Panel.Bounds="0,98,412{130,2147483647},592{70,2147483647}">
+                                    <i:TabBar.Items>
+                                        <i:TabBarItem Header="From Teachers" IsSelected="True" Id="bce94785-6d64-44d9-a046-b67d46495c67">
+                                            <i:TabBarItem.Icon>
+                                                <Icon CatalogId="fa-check" Id="f1fba70b-e2a8-4882-b076-e5c2b7aee3ad" />
+                                            </i:TabBarItem.Icon>
+                                            <i:TabBarItem.Content>
+                                                <Container ClipToContainer="True" Id="d53e04c4-16ed-4d50-87e1-3418b30ae843">
+                                                    <Container.Children>
+                                                        <i:AdvancedSettings Direction="Vertical" Thickness="0" Id="53a24274-edf4-438b-a495-3a545793520a" Panel.Bounds="0,0,412{5,2147483647},326{5,2147483647}">
+                                                            <i:AdvancedSettings.Template>
+                                                                <Template Id="2a7934de-c5df-4b37-9227-0221e71ddbc0">
+                                                                    <Template.Content>
+                                                                        <ListItemContent Color="#FFFFFFFF" Thickness="0" Padding="0" Id="5384d555-d71f-4298-8f95-a57beaaf46bb" Panel.Bounds="0,0,0*,44" Panel.Layout="Stretch">
+                                                                            <ListItemContent.Content>
+                                                                                <Container ClipToContainer="True" Id="da0db3c7-c59f-424b-9e82-59a012a1f8f5">
+                                                                                    <Container.Children>
+                                                                                        <i:Label RichText="Setting" Foreground="#FF000000" FontSize="16" FontStyle="Normal" Id="9bd1deaa-356f-4127-956f-382249143d14" Panel.Bounds="59,12,0*,0*" />
+                                                                                        <i:Label RichText="On" Align="Right" Foreground="#FF909090" FontSize="16" Id="6a981d33-573d-41c0-b2b7-966e13d32269" Panel.Bounds="195,12,90,22" />
+                                                                                        <Icon Color="#FF909090" CatalogId="Greater Than" Id="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" Panel.Bounds="291,16,15,15" />
+                                                                                        <ContainerBox Background="#FF0070FF" Thickness="0" CornerRadius="6" Id="e730657a-1c8b-4d07-b31f-7aa7ef2eb915" Panel.Bounds="15,8,29,29">
+                                                                                            <ContainerBox.Content>
+                                                                                                <Container ClipToContainer="True" Id="31536e14-a0ef-4c0b-83a5-2dee07cce719">
+                                                                                                    <Container.Children>
+                                                                                                        <Icon Color="#FFFFFFFF" CatalogId="Gears" Id="2b7c70c0-36a8-4201-b0f7-8cda43eaa27c" Panel.Bounds="6,6,17,17" />
+                                                                                                    </Container.Children>
+                                                                                                </Container>
+                                                                                            </ContainerBox.Content>
+                                                                                        </ContainerBox>
+                                                                                        <Line Thickness="1" Color="#FFE3E3E5" Id="7ac7ad12-ea8a-47e9-a4c4-65dd920dddc8" Panel.Bounds="59,1,261,3">
+                                                                                            <Line.StartPoint>
+                                                                                                <Point X="49" Id="884a9632-867a-4e63-ab83-cd935a814e7e" />
+                                                                                            </Line.StartPoint>
+                                                                                            <Line.Segments>
+                                                                                                <Segment Id="51f63935-345a-4cae-9582-f01b77b26062">
+                                                                                                    <Segment.EndPoint>
+                                                                                                        <Point X="310" Id="ce67d841-8985-4e89-a299-8414f1c5b6ec" />
+                                                                                                    </Segment.EndPoint>
+                                                                                                </Segment>
+                                                                                            </Line.Segments>
+                                                                                        </Line>
+                                                                                    </Container.Children>
+                                                                                </Container>
+                                                                            </ListItemContent.Content>
+                                                                        </ListItemContent>
+                                                                    </Template.Content>
+                                                                </Template>
+                                                            </i:AdvancedSettings.Template>
+                                                            <i:AdvancedSettings.Items>
+                                                                <ListItem Id="3b09b702-92d0-47a4-9854-baf69f091e4d">
+                                                                    <ListItem.Content>
+                                                                        <SharedPart Id="664c5c10-884e-4efc-8f09-e20a508028a3">
+                                                                            <SharedPart.Customizations>
+                                                                                <Add Property="Panel.Children" Target="da0db3c7-c59f-424b-9e82-59a012a1f8f5">
+                                                                                    <Add.Item>
+                                                                                        <Icon Color="#FF909090" CatalogId="fa-download" Id="dd1be913-c3a0-4121-be79-a7d0fdeaddce" Panel.Bounds="351,8,29,29" />
+                                                                                    </Add.Item>
+                                                                                </Add>
+                                                                                <Set Property="Icon.CatalogId" Value="Powerpoint" Target="2b7c70c0-36a8-4201-b0f7-8cda43eaa27c" />
+                                                                                <Set Property="Label.RichText" Value="Lecture 1.ppt" Target="9bd1deaa-356f-4127-956f-382249143d14" />
+                                                                                <Remove Target="6a981d33-573d-41c0-b2b7-966e13d32269" />
+                                                                                <Remove Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                            </SharedPart.Customizations>
+                                                                        </SharedPart>
+                                                                    </ListItem.Content>
+                                                                </ListItem>
+                                                                <ListItem Id="f842e9a1-6270-449c-86d4-162b19100ca5">
+                                                                    <ListItem.Content>
+                                                                        <SharedPart Id="f28f4e96-be44-4898-928e-1829ff3fa811">
+                                                                            <SharedPart.Customizations>
+                                                                                <Add Property="Panel.Children" Target="da0db3c7-c59f-424b-9e82-59a012a1f8f5">
+                                                                                    <Add.Item>
+                                                                                        <Icon Color="#FF909090" CatalogId="fa-download" Id="755aa20f-0d89-4880-a39a-598efd961e53" Panel.Bounds="351,8,29,29" />
+                                                                                    </Add.Item>
+                                                                                </Add>
+                                                                                <Set Property="Icon.CatalogId" Value="Powerpoint" Target="2b7c70c0-36a8-4201-b0f7-8cda43eaa27c" />
+                                                                                <Set Property="Label.RichText" Value="Lecture 2.ppt" Target="9bd1deaa-356f-4127-956f-382249143d14" />
+                                                                                <Remove Target="6a981d33-573d-41c0-b2b7-966e13d32269" />
+                                                                                <Remove Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                            </SharedPart.Customizations>
+                                                                        </SharedPart>
+                                                                    </ListItem.Content>
+                                                                </ListItem>
+                                                                <ListItem Id="071f94c5-1d18-4446-9aa6-6ef259bcf714">
+                                                                    <ListItem.Content>
+                                                                        <SharedPart Id="ac78daff-f9fe-481d-af30-484cfa9c1f90">
+                                                                            <SharedPart.Customizations>
+                                                                                <Set Property="Icon.CatalogId" Value="Powerpoint" Target="2b7c70c0-36a8-4201-b0f7-8cda43eaa27c" />
+                                                                                <Set Property="Label.RichText" Value="Lecture 3.ppt" Target="9bd1deaa-356f-4127-956f-382249143d14" />
+                                                                                <Set Property="Icon.CatalogId" Value="fa-download" Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                                <Move To="351,8" Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                                <Resize To="29,29" Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                                <Remove Target="6a981d33-573d-41c0-b2b7-966e13d32269" />
+                                                                            </SharedPart.Customizations>
+                                                                        </SharedPart>
+                                                                    </ListItem.Content>
+                                                                </ListItem>
+                                                                <ListItem Id="41c74ac0-3d56-4e31-9dd4-c65337e08025">
+                                                                    <ListItem.Content>
+                                                                        <SharedPart Id="37fe2288-a297-4906-b917-683a5ebe75e1">
+                                                                            <SharedPart.Customizations>
+                                                                                <Add Property="Panel.Children" Target="da0db3c7-c59f-424b-9e82-59a012a1f8f5">
+                                                                                    <Add.Item>
+                                                                                        <Icon Color="#FF909090" CatalogId="fa-download" Id="70db2364-f08a-4f80-998c-9df25cd2a587" Panel.Bounds="351,8,29,29" />
+                                                                                    </Add.Item>
+                                                                                </Add>
+                                                                                <Set Property="Label.RichText" Value="Lab 1.docx" Target="9bd1deaa-356f-4127-956f-382249143d14" />
+                                                                                <Set Property="Icon.CatalogId" Value="fa-file-word-o" Target="2b7c70c0-36a8-4201-b0f7-8cda43eaa27c" />
+                                                                                <Remove Target="6a981d33-573d-41c0-b2b7-966e13d32269" />
+                                                                                <Remove Target="564357f2-64a8-44a4-bbc6-d8f4da91c5cb" />
+                                                                            </SharedPart.Customizations>
+                                                                        </SharedPart>
+                                                                    </ListItem.Content>
+                                                                </ListItem>
+                                                            </i:AdvancedSettings.Items>
+                                                        </i:AdvancedSettings>
+                                                    </Container.Children>
+                                                </Container>
+                                            </i:TabBarItem.Content>
+                                        </i:TabBarItem>
+                                        <i:TabBarItem Header="Extra" Id="193c911e-f8d1-4fa4-bf79-354cdbc07324">
+                                            <i:TabBarItem.Icon>
+                                                <Icon CatalogId="iOS 7 Ellipsis" Id="cc29e32f-7a82-4db2-92ef-335ce8fe1f21" />
+                                            </i:TabBarItem.Icon>
+                                            <i:TabBarItem.Content>
+                                                <Container ClipToContainer="True" Id="9c7830b7-abff-4925-b581-ce8755f8ee2d">
+                                                    <Container.Children>
+                                                        <i:Label RichText="No extra materials yet" FontFamily="Open Sans" Id="45bace4d-f9c4-4326-9372-8fe8424f6725" Panel.Bounds="133,261,5*{5,2147483647},5*{5,2147483647}" />
+                                                    </Container.Children>
+                                                </Container>
+                                            </i:TabBarItem.Content>
+                                        </i:TabBarItem>
+                                    </i:TabBar.Items>
+                                </i:TabBar>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3635169d-9b7a-4b1c-a700-b750acf990e8">
+                            <Add.Item>
+                                <i:Title RichText="Course: CS419 Compilers" FontFamily="Open Sans" Id="aac15ed9-9eda-488f-8162-8a1844097607" Panel.Bounds="10,59,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>
