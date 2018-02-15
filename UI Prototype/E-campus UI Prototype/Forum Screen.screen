@@ -26,7 +26,7 @@
                     <KeyFrame.Operations>
                         <Add Property="Panel.Children" Target="635cd2d6-5d20-48d8-8d1b-0176b4dc738c">
                             <Add.Item>
-                                <i:Header Text="Forum" FontSize="16" FontFamily="Open Sans" Id="0c43fbdc-3bf9-4954-8c4d-6de872745a61" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                                <i:Header Text="Forum" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="0c43fbdc-3bf9-4954-8c4d-6de872745a61" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="635cd2d6-5d20-48d8-8d1b-0176b4dc738c">
@@ -36,7 +36,7 @@
                         </Add>
                         <Add Property="Panel.Children" Target="635cd2d6-5d20-48d8-8d1b-0176b4dc738c">
                             <Add.Item>
-                                <i:Title RichText="Course: CS419 Compilers" FontFamily="Open Sans" Id="451ac484-a320-4c46-b2b6-ab556cd828f6" Panel.Bounds="20,64,5*{5,2147483647},5*{5,2147483647}" />
+                                <i:Title RichText="Course: CS419 Compilers" FontFamily="Open Sans" Id="451ac484-a320-4c46-b2b6-ab556cd828f6" Panel.Bounds="20,69,5*{5,2147483647},5*{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="635cd2d6-5d20-48d8-8d1b-0176b4dc738c">

@@ -1,0 +1,117 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="10.1.1000.89"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                    xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                    Id="b3cf9dc8-0ded-44cb-af57-fff9b1db00e9">
+    <Page.Content>
+        <Content Width="412" Height="690" Id="7829d03c-70ef-4835-8526-43aa0bb3fba6">
+            <Content.Layers>
+                <Layer Id="7e03a0c6-b325-4c87-a7a3-f9f70f41d826" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="2d8d2b4b-a09c-474d-8c8a-cf032ae3a3f8" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="412,690" Id="59da834d-3b2f-4513-a52f-5ae82974bf7f" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="bef40a8d-bb74-4083-97e3-19453d0a15af" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="GenericPhone" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="02/15/2018 17:58:13" Id="8c0a297c-5d9e-4293-a198-b50b063c9911">
+            <Scene.KeyFrames>
+                <KeyFrame Id="138c709f-7913-469d-b3b8-ee78e7a9a89a">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="7e03a0c6-b325-4c87-a7a3-f9f70f41d826">
+                            <Add.Item>
+                                <i:Header Text="Announcements" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="a99063eb-747d-4e65-a270-741208bdb819" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="7e03a0c6-b325-4c87-a7a3-f9f70f41d826">
+                            <Add.Item>
+                                <i:Settings Direction="Vertical" Thickness="0" Id="3331265a-824e-4dd8-84d9-02b5f3e49bfe" Panel.Bounds="0,59,412{5,2147483647},631{5,2147483647}">
+                                    <i:Settings.Template>
+                                        <Template Id="8560d8e3-6c37-4618-a90c-816240359a52">
+                                            <Template.Content>
+                                                <ListItemContent Thickness="0" Padding="0" Id="140c6723-7e95-4fd4-96ff-6dda8200e91f" Panel.Bounds="0,0,0*,44" Panel.Layout="Stretch">
+                                                    <ListItemContent.Content>
+                                                        <Container ClipToContainer="True" Id="94dab504-b685-46a3-a283-f91c481d7037">
+                                                            <Container.Children>
+                                                                <i:Label RichText="Item 1" Foreground="#FF000000" FontSize="16" FontStyle="Normal" Id="668035de-e2c2-4f6c-b212-76d1cfa6188d" Panel.Bounds="15,12,0*,0*" />
+                                                                <Line Thickness="1" Color="#FFE3E3E5" Id="3b63ecd2-8b8f-4357-8955-caabf7227a4f" Panel.Bounds="15,0,305,3">
+                                                                    <Line.StartPoint>
+                                                                        <Point X="5" Id="be3ea30d-3821-4dc2-8648-b9b392a1f322" />
+                                                                    </Line.StartPoint>
+                                                                    <Line.Segments>
+                                                                        <Segment Id="9017c42d-760c-408d-b9dd-fed937f29809">
+                                                                            <Segment.EndPoint>
+                                                                                <Point X="310" Id="bde4c21c-ef05-4088-ab5a-95aca58a9c48" />
+                                                                            </Segment.EndPoint>
+                                                                        </Segment>
+                                                                    </Line.Segments>
+                                                                </Line>
+                                                            </Container.Children>
+                                                        </Container>
+                                                    </ListItemContent.Content>
+                                                </ListItemContent>
+                                            </Template.Content>
+                                        </Template>
+                                    </i:Settings.Template>
+                                    <i:Settings.Items>
+                                        <ListItem Id="da8baea6-8774-45cc-815d-5e3ee301db1a">
+                                            <ListItem.Content>
+                                                <SharedPart Id="2c52cb06-944a-4b80-93cb-8168356446f4">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="94dab504-b685-46a3-a283-f91c481d7037">
+                                                            <Add.Item>
+                                                                <i:Label RichText="2018-02-01 " Foreground="#FF8AB1D3" FontFamily="Open Sans" Id="62307092-242c-4fbc-a6f3-6753d6fd0666" Panel.Bounds="319,16,5*{5,2147483647},5*{5,2147483647}" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Set Property="Panel.Bounds" Value="15,10,0*,0*" Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                        <Set Property="Panel.Bounds" Value="0,0,0*,42" Target="140c6723-7e95-4fd4-96ff-6dda8200e91f" />
+                                                        <Set Property="Label.RichText" Value="very Important &#xD;&#xA;Subjects Registrations for the second semester of &#xD;&#xA;the academic year 2017/2018 is open &#xD;&#xA;(through the e-com) starting from &#xD;&#xA;Thursday 1/2/2018 to Thursday 8/2/2018 2pm. " Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                        <Resize To="0,168" Target="140c6723-7e95-4fd4-96ff-6dda8200e91f" />
+                                                        <Move To="11,41" Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                        <Set Property="Label.Align" Value="Left" Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                        <Remove Target="3b63ecd2-8b8f-4357-8955-caabf7227a4f" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                        <ListItem Id="4ae7b0e4-5bcd-469e-8025-6564e9054854">
+                                            <ListItem.Content>
+                                                <SharedPart Id="5f75699c-5a22-4bfc-98e7-6b3b3e7d8fac">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="94dab504-b685-46a3-a283-f91c481d7037">
+                                                            <Add.Item>
+                                                                <i:Label RichText="2018-02-15 " Foreground="#FF8AB1D3" FontFamily="Open Sans" Id="061539a0-7afe-4fdc-b1e8-7e48e5854586" Panel.Bounds="319,16,5*{5,2147483647},5*{5,2147483647}" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Set Property="Label.RichText" Value="To all students ..............." Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                        <Resize To="0,144" Target="140c6723-7e95-4fd4-96ff-6dda8200e91f" />
+                                                        <Move To="11,43" Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                        <ListItem Id="051b6ca5-a4db-49f5-bbfe-45a879aba8f5">
+                                            <ListItem.Content>
+                                                <SharedPart Id="86fd15fa-1eac-4216-a999-9c631a119508">
+                                                    <SharedPart.Customizations>
+                                                        <Remove Target="668035de-e2c2-4f6c-b212-76d1cfa6188d" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                    </i:Settings.Items>
+                                </i:Settings>
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

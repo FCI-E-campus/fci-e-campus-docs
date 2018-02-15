@@ -26,17 +26,17 @@
                     <KeyFrame.Operations>
                         <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
                             <Add.Item>
-                                <i:Header Text="Faculty Map" FontSize="16" FontFamily="Open Sans" Id="70444a6e-ac60-4bbc-aff5-e98bea166e80" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                                <i:Header Text="Faculty Map" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="70444a6e-ac60-4bbc-aff5-e98bea166e80" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
                             <Add.Item>
-                                <Image SourcePath="assets/Faculty map(1).jpg" Id="0329e386-b7f9-4b16-86d9-7954ee23727f" Panel.Bounds="6,98,400{5,2147483647},582{5,2147483647}" />
+                                <Image SourcePath="assets/Faculty map(1).jpg" Id="0329e386-b7f9-4b16-86d9-7954ee23727f" Panel.Bounds="6,102,400{5,2147483647},582{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="51409498-5a5c-4435-b2f0-a62b8f410daf">
                             <Add.Item>
-                                <i:SearchBar WatermarkText="Search" FontFamily="Open Sans" Id="fd02296e-6e9d-44a5-83e5-1b20618d0412" Panel.Bounds="6,55,400{105,2147483647},5*{5,2147483647}" />
+                                <i:SearchBar WatermarkText="Search" FontFamily="Open Sans" Id="fd02296e-6e9d-44a5-83e5-1b20618d0412" Panel.Bounds="6,65,400{105,2147483647},5*{5,2147483647}" />
                             </Add.Item>
                         </Add>
                     </KeyFrame.Operations>

@@ -26,27 +26,27 @@
                     <KeyFrame.Operations>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <i:Header Text="Calendar" FontSize="16" FontFamily="Open Sans" Id="0513bb41-ccf7-42b4-942c-0d61773a7330" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                                <i:Header Text="Calendar" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="0513bb41-ccf7-42b4-942c-0d61773a7330" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <Image SourcePath="assets/Capture.PNG" Id="2faaa75e-15c8-497b-a011-923a9ba00ea6" Panel.Bounds="0,86,412{5,2147483647},266{5,2147483647}" />
+                                <Image SourcePath="assets/Capture.PNG" Id="2faaa75e-15c8-497b-a011-923a9ba00ea6" Panel.Bounds="0,105,412{5,2147483647},266{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <i:Label RichText="&lt;Run FontSize=&quot;21&quot; Foreground=&quot;#FFE70000&quot; &gt;Monday, October 10, 2018&lt;/Run&gt;" FontFamily="Open Sans" Id="02c582e8-a63f-4d67-b310-fd88779983e3" Panel.Bounds="7,375,5*{5,2147483647},5*{5,2147483647}" />
+                                <i:Label RichText="&lt;Run FontSize=&quot;21&quot; Foreground=&quot;#FFE70000&quot; &gt;Monday, October 10, 2018&lt;/Run&gt;" FontFamily="Open Sans" Id="02c582e8-a63f-4d67-b310-fd88779983e3" Panel.Bounds="7,394,5*{5,2147483647},5*{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <i:Title RichText="October 2018" FontFamily="Open Sans" Id="6646124c-a719-4a30-82f3-38f91cae3220" Panel.Bounds="24,53,5*{5,2147483647},5*{5,2147483647}" />
+                                <i:Title RichText="October 2018" FontFamily="Open Sans" Id="6646124c-a719-4a30-82f3-38f91cae3220" Panel.Bounds="24,72,5*{5,2147483647},5*{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <Triangle Thickness="1" IsClosed="True" RotationAngle="180.713140167041" Color="#FF275B9D" Background="#FF275B9D" Id="2e36f4de-174c-4e6c-a6d8-41ad3c399716" Panel.Bounds="143,58,23,14">
+                                <Triangle Thickness="1" IsClosed="True" RotationAngle="180.713140167041" Color="#FF3F51B5" Background="#FF3F51B5" Id="2e36f4de-174c-4e6c-a6d8-41ad3c399716" Panel.Bounds="143,77,23,14">
                                     <Triangle.StartPoint>
                                         <Point X="16" Y="24" Id="1ea88493-b2ac-4f81-9162-f7084e768277" />
                                     </Triangle.StartPoint>
@@ -72,7 +72,7 @@
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <Line Thickness="1" Background="#00FFFFFF" Id="962fe302-e955-48cc-8822-e96525fa8c11" Panel.Bounds="21,370,366{1,2147483647},3{1,2147483647}">
+                                <Line Thickness="1" Background="#00FFFFFF" Id="962fe302-e955-48cc-8822-e96525fa8c11" Panel.Bounds="21,389,366{1,2147483647},3{1,2147483647}">
                                     <Line.StartPoint>
                                         <Point X="21" Id="8d5a6c4e-0c51-4e47-947c-743c3019a6a4" />
                                     </Line.StartPoint>
@@ -88,7 +88,7 @@
                         </Add>
                         <Add Property="Panel.Children" Target="0750b6d2-15c9-473a-b9d7-30e49134445a">
                             <Add.Item>
-                                <i:Settings Direction="Vertical" Thickness="0" Id="8bf04472-be12-44a8-8820-0c188ec3c7a1" Panel.Bounds="16,421,379{5,2147483647},130{5,2147483647}">
+                                <i:Settings Direction="Vertical" Thickness="0" Id="8bf04472-be12-44a8-8820-0c188ec3c7a1" Panel.Bounds="16,440,379{5,2147483647},130{5,2147483647}">
                                     <i:Settings.Template>
                                         <Template Id="36b84b64-2122-4eb4-9464-981d895905b6">
                                             <Template.Content>

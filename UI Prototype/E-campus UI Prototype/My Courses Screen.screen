@@ -26,17 +26,17 @@
                     <KeyFrame.Operations>
                         <Add Property="Panel.Children" Target="1dca8259-c2af-4381-aa26-4141c8b05f9a">
                             <Add.Item>
-                                <i:Header Text="My Courses" FontSize="16" FontFamily="Open Sans" Id="5e69d414-d5ae-4333-8ed0-9f15fd8d2bdf" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                                <i:Header Text="My Courses" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="5e69d414-d5ae-4333-8ed0-9f15fd8d2bdf" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="1dca8259-c2af-4381-aa26-4141c8b05f9a">
                             <Add.Item>
-                                <i:Title RichText="Your registered course:" Foreground="#FF1C416F" FontFamily="Open Sans" Id="42d91765-3f43-4113-b41f-6e76c87b729b" Panel.Bounds="8,57,5*{5,2147483647},5*{5,2147483647}" />
+                                <i:Title RichText="Your registered courses:" Foreground="#FF1C416F" FontFamily="Open Sans" Id="42d91765-3f43-4113-b41f-6e76c87b729b" Panel.Bounds="14,76,5*{5,2147483647},5*{5,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="1dca8259-c2af-4381-aa26-4141c8b05f9a">
                             <Add.Item>
-                                <i:Settings Direction="Vertical" Thickness="0" Id="ceab7d72-1932-4d60-ac32-531d4f3745d2" Panel.Bounds="26,93,366{5,2147483647},306{5,2147483647}">
+                                <i:Settings Direction="Vertical" Thickness="0" Id="ceab7d72-1932-4d60-ac32-531d4f3745d2" Panel.Bounds="32,112,366{5,2147483647},306{5,2147483647}">
                                     <i:Settings.Template>
                                         <Template Id="6841b4d5-77eb-41ca-a9a5-d0232a51cc62">
                                             <Template.Content>

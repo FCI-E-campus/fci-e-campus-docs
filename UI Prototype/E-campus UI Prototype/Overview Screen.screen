@@ -26,7 +26,7 @@
                     <KeyFrame.Operations>
                         <Add Property="Panel.Children" Target="9496bf0b-6255-49d5-92fa-832a18bbdbc8">
                             <Add.Item>
-                                <i:Header Text="Overview" FontSize="16" FontFamily="Open Sans" Id="02f8ce43-bda2-4d50-a9a2-8b3e556bad5c" Panel.Bounds="0,0,412{5,2147483647},45{20,2147483647}" />
+                                <i:Header Text="Overview" Background="#FF3F51B5" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Open Sans" Id="02f8ce43-bda2-4d50-a9a2-8b3e556bad5c" Panel.Bounds="0,0,412{5,2147483647},58{20,2147483647}" />
                             </Add.Item>
                         </Add>
                         <Add Property="Panel.Children" Target="9496bf0b-6255-49d5-92fa-832a18bbdbc8">
