@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2017-12-02 4:06:24 PM                        */
+/* Created on:     2018-03-06 2:56:24 AM                        */
 /*==============================================================*/
 
 
@@ -46,8 +46,6 @@ drop table if exists STUDENT;
 
 drop table if exists STUDENTCOURSE;
 
-drop table if exists STUDENTDEPARTMENT;
-
 drop table if exists TA;
 
 drop table if exists TACOURSE;
@@ -64,7 +62,7 @@ drop table if exists TASKCREATOR;
 create table ADMIN
 (
    ADMINUSERNAME        varchar(50) not null,
-   PASSWORD             varchar(50) not null,
+   ADMINPASSWORD        varchar(50) not null,
    FIRSTNAME            varchar(50) not null,
    LASTNAME             varchar(50) not null,
    primary key (ADMINUSERNAME)
@@ -78,7 +76,7 @@ create table ANNOUNCEMENT
    ANNOUNCEMENTID       int not null,
    ADMINUSERNAME        varchar(50) not null,
    ANNOUNCEMENTTITLE    varchar(200) not null,
-   ANNOUNCEMENTDESCRIPTION text not null,
+   ANNOUNCEMENTBODY     text not null,
    DATEPUBLISHED        datetime not null,
    primary key (ANNOUNCEMENTID)
 );
@@ -103,6 +101,7 @@ create table COMMENT
    AUTHORID             int not null,
    POSTID               int not null,
    COMMENTTEXT          text not null,
+   COMMENTTIME          datetime not null,
    primary key (COMMENTID)
 );
 
@@ -113,8 +112,11 @@ create table COURSE
 (
    COURSECODE           varchar(50) not null,
    DEPTID               int not null,
-   COURSENAME           varchar(100) not null,
+   COURSETITLE          varchar(100) not null,
    DESCRIPTION          text,
+   STARTDATE            datetime not null,
+   ENDDATE              datetime not null,
+   PASSCODE             varchar(10),
    primary key (COURSECODE)
 );
 
@@ -134,7 +136,7 @@ create table COURSESCHEDULE
 create table DEPARTMENT
 (
    DEPTID               int not null,
-   NAME                 varchar(50) not null,
+   DEPARTMENTNAME       varchar(50) not null,
    DESCRIPTION          text,
    primary key (DEPTID)
 );
@@ -171,7 +173,7 @@ create table GROUP
 (
    GROUPID              int not null,
    COURSECODE           varchar(50) not null,
-   NAME                 varchar(50) not null,
+   GROUPNAME            varchar(50) not null,
    primary key (GROUPID)
 );
 
@@ -188,6 +190,7 @@ create table OFFICIALMATERIAL
    MATERIALDESCRIPTION  text,
    MATERIALFILEPATH     varchar(1024) not null,
    DATEADDED            datetime,
+   MATERIALTYPE         varchar(10),
    primary key (MATERIALID)
 );
 
@@ -211,8 +214,8 @@ create table POST
    FORUMID              int not null,
    AUTHORID             int not null,
    POSTTITLE            varchar(100) not null,
-   POSTCONTENT          text not null,
-   ANSWERED             bool,
+   POSTBODY             text not null,
+   ANSWERED             bool not null,
    DATEPUBLISHED        datetime not null,
    primary key (POSTID)
 );
@@ -232,13 +235,15 @@ create table PREREQUISITECOURSE
 /*==============================================================*/
 create table PROFESSOR
 (
-   PROFESSORUSERNAME    varchar(50) not null,
+   PROFUSERNAME         varchar(50) not null,
    DEPTID               int not null,
-   EMAIL                varchar(75) not null,
-   PHONENUMBER          varchar(11),
+   PROFPASSWORD         varchar(50) not null,
+   FIRSTNAME            varchar(50) not null,
+   LASTNAME             varchar(50) not null,
+   EMAIL                varchar(150) not null,
+   PHONENUMBER          varchar(50),
    DATEOFBIRTH          date,
-   DEPARTMENTID         int not null,
-   primary key (PROFESSORUSERNAME)
+   primary key (PROFUSERNAME)
 );
 
 /*==============================================================*/
@@ -247,8 +252,8 @@ create table PROFESSOR
 create table PROFESSORCOURSE
 (
    COURSECODE           varchar(50) not null,
-   PROFESSORUSERNAME    varchar(50) not null,
-   primary key (COURSECODE, PROFESSORUSERNAME)
+   PROFUSERNAME         varchar(50) not null,
+   primary key (COURSECODE, PROFUSERNAME)
 );
 
 /*==============================================================*/
@@ -256,9 +261,10 @@ create table PROFESSORCOURSE
 /*==============================================================*/
 create table SCHEDULEDAY
 (
-   DAYNAME              varchar(3) not null,
+   DAYDATE              date not null,
    COURSESCHEDULEID     int not null,
-   primary key (DAYNAME)
+   DAYNAME              varchar(3) not null,
+   primary key (DAYDATE)
 );
 
 /*==============================================================*/
@@ -267,8 +273,8 @@ create table SCHEDULEDAY
 create table SCHEDULEDAYSLOT
 (
    SLOTID               int not null,
-   DAYNAME              varchar(3) not null,
-   STARTTIME            int not null,
+   DAYDATE              date not null,
+   STARTTIME            time not null,
    DURATION             int not null,
    SLOTTYPE             varchar(3) not null,
    primary key (SLOTID)
@@ -290,8 +296,13 @@ create table STATICMAP
 create table STUDENT
 (
    STUDUSERNAME         varchar(50) not null,
-   EMAIL                varchar(75) not null,
-   PHONENUMBER          varchar(11),
+   MAJORDEPTID          int,
+   MINORDEPTID          int,
+   STUDPASSWORD         varchar(50) not null,
+   FIRSTNAME            varchar(50) not null,
+   LASTNAME             varchar(50) not null,
+   EMAIL                varchar(150) not null,
+   PHONENUMBER          varchar(50),
    DATEOFBIRTH          date,
    FACULTYID            varchar(15) not null,
    ISMODERATOR          bool not null,
@@ -310,29 +321,18 @@ create table STUDENTCOURSE
 );
 
 /*==============================================================*/
-/* Table: STUDENTDEPARTMENT                                     */
-/*==============================================================*/
-create table STUDENTDEPARTMENT
-(
-   STUDUSERNAME         varchar(50) not null,
-   DEPTID               int not null,
-   primary key (STUDUSERNAME, DEPTID)
-);
-
-/*==============================================================*/
 /* Table: TA                                                    */
 /*==============================================================*/
 create table TA
 (
    TAUSERNAME           varchar(50) not null,
    DEPTID               int not null,
-   PASSWORD             varchar(50) not null,
+   TAPASSWORD           varchar(50) not null,
    FIRSTNAME            varchar(50) not null,
    LASTNAME             varchar(50) not null,
-   EMAIL                varchar(75) not null,
-   PHONENUMBER          varchar(11),
+   EMAIL                varchar(150) not null,
+   PHONENUMBER          varchar(50),
    DATEOFBIRTH          date,
-   DEPARTMENTID         int not null,
    primary key (TAUSERNAME)
 );
 
@@ -369,6 +369,7 @@ create table TASK
    DESCRIPTION          text,
    DUEDATE              datetime not null,
    DATECREATED          datetime not null,
+   WEIGHT               decimal,
    primary key (TASKID)
 );
 
@@ -383,7 +384,7 @@ create table TASKCREATOR
    primary key (CREATORID)
 );
 
-alter table ANNOUNCEMENT add constraint FK_RELATIONSHIP_26 foreign key (ADMINUSERNAME)
+alter table ANNOUNCEMENT add constraint FK_MAKE foreign key (ADMINUSERNAME)
       references ADMIN (ADMINUSERNAME) on delete restrict on update restrict;
 
 alter table COMMENT add constraint FK_RELATIONSHIP_28 foreign key (POSTID)
@@ -404,7 +405,7 @@ alter table EXTRAMATERIALS add constraint FK_RELATIONSHIP_19 foreign key (STUDUS
 alter table EXTRAMATERIALS add constraint FK_RELATIONSHIP_20 foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
 
-alter table FORUM add constraint FK_FORUMCLASS foreign key (COURSECODE)
+alter table FORUM add constraint FK_FORUMCOURSE foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
 
 alter table GROUP add constraint FK_RELATIONSHIP_11 foreign key (COURSECODE)
@@ -437,14 +438,20 @@ alter table PROFESSOR add constraint FK_PROFESSORDEPARTMENT foreign key (DEPTID)
 alter table PROFESSORCOURSE add constraint FK_PROFESSORCOURSE foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
 
-alter table PROFESSORCOURSE add constraint FK_PROFESSORCOURSE2 foreign key (PROFESSORUSERNAME)
-      references PROFESSOR (PROFESSORUSERNAME) on delete restrict on update restrict;
+alter table PROFESSORCOURSE add constraint FK_PROFESSORCOURSE2 foreign key (PROFUSERNAME)
+      references PROFESSOR (PROFUSERNAME) on delete restrict on update restrict;
 
 alter table SCHEDULEDAY add constraint FK_RELATIONSHIP_24 foreign key (COURSESCHEDULEID)
       references COURSESCHEDULE (COURSESCHEDULEID) on delete restrict on update restrict;
 
-alter table SCHEDULEDAYSLOT add constraint FK_RELATIONSHIP_25 foreign key (DAYNAME)
-      references SCHEDULEDAY (DAYNAME) on delete restrict on update restrict;
+alter table SCHEDULEDAYSLOT add constraint FK_RELATIONSHIP_25 foreign key (DAYDATE)
+      references SCHEDULEDAY (DAYDATE) on delete restrict on update restrict;
+
+alter table STUDENT add constraint FK_MAJORDEPARTMENT foreign key (MAJORDEPTID)
+      references DEPARTMENT (DEPTID) on delete restrict on update restrict;
+
+alter table STUDENT add constraint FK_MINORDEPARTMENT foreign key (MINORDEPTID)
+      references DEPARTMENT (DEPTID) on delete restrict on update restrict;
 
 alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_10 foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
@@ -454,12 +461,6 @@ alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_12 foreign key (STUDUSE
 
 alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_13 foreign key (GROUPID)
       references GROUP (GROUPID) on delete restrict on update restrict;
-
-alter table STUDENTDEPARTMENT add constraint FK_STUDENTDEPARTMENT foreign key (STUDUSERNAME)
-      references STUDENT (STUDUSERNAME) on delete restrict on update restrict;
-
-alter table STUDENTDEPARTMENT add constraint FK_STUDENTDEPARTMENT2 foreign key (DEPTID)
-      references DEPARTMENT (DEPTID) on delete restrict on update restrict;
 
 alter table TA add constraint FK_TADEPARTMENT foreign key (DEPTID)
       references DEPARTMENT (DEPTID) on delete restrict on update restrict;
