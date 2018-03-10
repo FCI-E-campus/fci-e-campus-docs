@@ -5,7 +5,7 @@
 <Workspace>
 	<Local Expanded="Yes">
 		<Model Expanded="Yes" ID="{B26D1AEE-FA55-46A0-B46F-EF8C8D1FBCA3}" Name="GP_ERD_CDM" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="GP_ERD.cdm"/>
-		<Model Expanded="Yes" ID="{101B61BA-4706-4540-A527-7EC451DF0188}" Name="GP_ERD_PDM" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="GP_ERD_PDM.pdm"/>
+		<Model Expanded="Yes" ID="{5E863E48-C5C4-471D-87CA-5869544FE410}" Name="GP_ERD_PDM" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="GP_ERD_PDM.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>

@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2018-03-06 2:56:24 AM                        */
+/* Created on:     2018-03-10 10:41:49 PM                       */
 /*==============================================================*/
 
 
@@ -22,7 +22,7 @@ drop table if exists EXTRAMATERIALS;
 
 drop table if exists FORUM;
 
-drop table if exists GROUP;
+drop table if exists GROUPS;
 
 drop table if exists OFFICIALMATERIAL;
 
@@ -167,9 +167,9 @@ create table FORUM
 );
 
 /*==============================================================*/
-/* Table: GROUP                                                 */
+/* Table: GROUPS                                                */
 /*==============================================================*/
-create table GROUP
+create table GROUPS
 (
    GROUPID              int not null,
    COURSECODE           varchar(50) not null,
@@ -296,8 +296,8 @@ create table STATICMAP
 create table STUDENT
 (
    STUDUSERNAME         varchar(50) not null,
-   MAJORDEPTID          int,
-   MINORDEPTID          int,
+   DEPTID               int,
+   DEP_DEPTID           int,
    STUDPASSWORD         varchar(50) not null,
    FIRSTNAME            varchar(50) not null,
    LASTNAME             varchar(50) not null,
@@ -408,7 +408,7 @@ alter table EXTRAMATERIALS add constraint FK_RELATIONSHIP_20 foreign key (COURSE
 alter table FORUM add constraint FK_FORUMCOURSE foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
 
-alter table GROUP add constraint FK_RELATIONSHIP_11 foreign key (COURSECODE)
+alter table GROUPS add constraint FK_RELATIONSHIP_11 foreign key (COURSECODE)
       references COURSE (COURSECODE) on delete restrict on update restrict;
 
 alter table OFFICIALMATERIAL add constraint FK_RELATIONSHIP_16 foreign key (COURSECODE)
@@ -447,10 +447,10 @@ alter table SCHEDULEDAY add constraint FK_RELATIONSHIP_24 foreign key (COURSESCH
 alter table SCHEDULEDAYSLOT add constraint FK_RELATIONSHIP_25 foreign key (DAYDATE)
       references SCHEDULEDAY (DAYDATE) on delete restrict on update restrict;
 
-alter table STUDENT add constraint FK_MAJORDEPARTMENT foreign key (MAJORDEPTID)
+alter table STUDENT add constraint FK_MAJORDEPARTMENT foreign key (DEPTID)
       references DEPARTMENT (DEPTID) on delete restrict on update restrict;
 
-alter table STUDENT add constraint FK_MINORDEPARTMENT foreign key (MINORDEPTID)
+alter table STUDENT add constraint FK_MINORDEPARTMENT foreign key (DEP_DEPTID)
       references DEPARTMENT (DEPTID) on delete restrict on update restrict;
 
 alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_10 foreign key (COURSECODE)
@@ -460,7 +460,7 @@ alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_12 foreign key (STUDUSE
       references STUDENT (STUDUSERNAME) on delete restrict on update restrict;
 
 alter table STUDENTCOURSE add constraint FK_RELATIONSHIP_13 foreign key (GROUPID)
-      references GROUP (GROUPID) on delete restrict on update restrict;
+      references GROUPS (GROUPID) on delete restrict on update restrict;
 
 alter table TA add constraint FK_TADEPARTMENT foreign key (DEPTID)
       references DEPARTMENT (DEPTID) on delete restrict on update restrict;
@@ -475,7 +475,7 @@ alter table TACOURSEGROUP add constraint FK_TACOURSEGROUP foreign key (TACOURSEI
       references TACOURSE (TACOURSEID) on delete restrict on update restrict;
 
 alter table TACOURSEGROUP add constraint FK_TACOURSEGROUP2 foreign key (GROUPID)
-      references GROUP (GROUPID) on delete restrict on update restrict;
+      references GROUPS (GROUPID) on delete restrict on update restrict;
 
 alter table TASK add constraint FK_CREATEDBY foreign key (CREATORID)
       references TASKCREATOR (CREATORID) on delete restrict on update restrict;
