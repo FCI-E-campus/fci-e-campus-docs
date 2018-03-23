@@ -1,7 +1,5 @@
 # FCI E-campus: Timetable & Materials Organizer.
-<p align="center"> 
-	<img src="https://github.com/FCI-E-campus/fci-e-campus-docs/raw/master/Logo%20%26%20Icon/FCI%20E-campus%20logo%20256x256.png">
-</p>
+![Logo](https://github.com/FCI-E-campus/fci-e-campus-docs/raw/master/Logo%20%26%20Icon/FCI%20E-campus%20logo%20256x256.png)
 * Our app helps students stay organized by providing them with their schedule, depending on what courses they have registered.
 * It also notifies them for new announcements, upcoming quizzes and assignments deliveries to help them keep track with their courses.
 * The app will organize downloading and uploading materials.
@@ -9,4 +7,4 @@
 * And many, many more.
 
 ---
-This repository contains all the project documentation files.
+This repository contains all the project documentation files.  
