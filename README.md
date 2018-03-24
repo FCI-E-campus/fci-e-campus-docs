@@ -6,5 +6,7 @@
 * That’s not it, the app will provide a forum for the students to communicate with each other.
 * And many, many more.
 
----
-This repository contains all the project documentation files.  
+*This repository contains all the project documentation files.*  
+
+## License
+This project is licensed under the GPLv3 license.
