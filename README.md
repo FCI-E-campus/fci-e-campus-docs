@@ -9,4 +9,4 @@
 *This repository contains all the project documentation files.*  
 
 ## License
-This project is licensed under the GPLv3 license.
+This project is licensed under the [GPLv3](https://github.com/FCI-E-campus/fci-e-campus-docs/blob/master/LICENSE) license.
