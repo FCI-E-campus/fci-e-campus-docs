@@ -1,0 +1,12 @@
+- student table :
+added ActivationCode varchar(20)
+      isActiveted boolean
+
+- professor table : 
+added ActivationCode varchar(20)
+      isActiveted boolean
+
+- ta table : 
+added ActivationCode varchar(20)
+      isActiveted boolean
+
