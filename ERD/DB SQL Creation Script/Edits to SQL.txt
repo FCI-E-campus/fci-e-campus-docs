@@ -1,8 +1,11 @@
-- professor table : 
+- 'professor' table : 
 added ActivationCode varchar(20)
       isActiveted boolean
 
-- ta table : 
+- 'ta' table : 
 added ActivationCode varchar(20)
       isActiveted boolean
+
+- 'scheduledayslot' table:
+added PLACE varchar(750)
 
