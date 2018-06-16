@@ -7,5 +7,5 @@ added ActivationCode varchar(20)
       isActiveted boolean
 
 - 'scheduledayslot' table:
-added PLACE varchar(750)
+added PLACE   Text 
 
